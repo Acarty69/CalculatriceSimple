@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:gravity="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="16dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_clear"
+                android:text="C"
+                style="@style/ResetBtnStyle" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_1"
+                style="@style/DigitBtnStyle"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                style="@style/DigitBtnStyle"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_3"
+                style="@style/DigitBtnStyle"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button_add"
+                style="@style/OperatorBtnStyle"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_4"
+                style="@style/DigitBtnStyle"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_5"
+                style="@style/DigitBtnStyle"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_6"
+                style="@style/DigitBtnStyle"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button_subtract"
+                style="@style/OperatorBtnStyle"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_7"
+                style="@style/DigitBtnStyle"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_8"
+                style="@style/DigitBtnStyle"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_9"
+                style="@style/DigitBtnStyle"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button_multiply"
+                style="@style/OperatorBtnStyle"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_0"
+                style="@style/DigitBtnStyle"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button_equal"
+                style="@style/EqualBtnStyle"
+                android:layout_weight="2"
+                android:onClick="computeResult"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/button_divide"
+                style="@style/OperatorBtnStyle"
+                android:text="/" />
+
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

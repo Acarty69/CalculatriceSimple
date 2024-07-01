@@ -1,0 +1,11 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_gray">#D3D3D3</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="text_green">#008000</color>
+    <color name="background_green">#00FF00</color>
+    <color name="reset_color">#F80A0A</color>
+    <color name="red_color">#FF0A0A</color>
+    <color name="yellow_colors">#FFFA0A</color>
+</resources>

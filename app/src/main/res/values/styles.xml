@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DigitBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">addNumber</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:backgroundTint">@color/dark_gray</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="OperatorBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">setOperator</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:backgroundTint">@color/background_gray</item> <!-- Utilisation de backgroundTint -->
+        <item name="android:textColor">@color/text_green</item>
+    </style>
+    <style name="EqualBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">computeResult</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:backgroundTint">@color/background_green</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="ResetBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">resetCalculator</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:backgroundTint">@color/background_gray</item>
+        <item name="android:textColor">@color/reset_color</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>
+
